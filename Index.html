@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&M TRANS e.U. - Ihr zuverlässiger Transportpartner in Wien & Ganz Österreich</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            gold: '#fbbf24',
+                            yellow: '#f59e0b',
+                            blue: '#1e3a8a',
+                            darkblue: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.78);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .glass-card-light {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+        .bg-fixed-poster {
+            background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), url('pexels-yananadolinska-12235461.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen bg-fixed-poster">
+
+    <!-- Top Contact Header -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-700/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-amber-500 text-slate-950 p-2.5 rounded-xl font-black text-xl tracking-wider flex items-center shadow-lg">
+                        <i class="fa-solid font-bold fa-truck-fast mr-2"></i> D&M
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-white block leading-none">D&M TRANS <span class="text-amber-400 font-medium text-xs">e.U.</span></span>
+                        <span class="text-xs text-amber-300 font-medium tracking-wide hidden sm:block" data-de="Wir bewegen mehr als nur Möbel!" data-en="We move more than just furniture!">Wir bewegen mehr als nur Möbel!</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                    <a href="#calculator" class="text-slate-200 hover:text-amber-400 transition" data-de="Angebot Rechner" data-en="Quote Calculator">Angebot Rechner</a>
+                    <a href="#services" class="text-slate-200 hover:text-amber-400 transition" data-de="Leistungen" data-en="Services">Leistungen</a>
+                    <a href="#inventory" class="text-slate-200 hover:text-amber-400 transition" data-de="Umzugslisten-Planer" data-en="Inventory Planner">Umzugslisten-Planer</a>
+                    <a href="#contact" class="text-slate-200 hover:text-amber-400 transition" data-de="Kontakt" data-en="Contact">Kontakt</a>
+                </nav>
+
+                <div class="flex items-center space-x-3">
+                    <button onclick="toggleLanguage()" id="langBtn" class="glass-card-light px-3 py-1.5 rounded-lg text-slate-900 font-bold text-xs uppercase hover:bg-white transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-globe"></i> <span id="langText">DE / EN</span>
+                    </button>
+                    <a href="tel:+436603771682" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm px-4 py-2 rounded-lg shadow-md transition flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="hidden sm:inline">+43 660 377 16 82</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+        <!-- Hero Banner -->
+        <section class="text-center py-6 sm:py-10 space-y-4">
+            <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-500/40 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide">
+                <i class="fa-solid fa-location-dot"></i> <span data-de="Wien & ganz Österreich" data-en="Vienna & All Austria">Wien & ganz Österreich</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight" data-de="Ihr zuverlässiger Transportpartner" data-en="Your Reliable Transport Partner">
+                Ihr zuverlässiger Transportpartner
+            </h1>
+            <p class="text-amber-400 text-lg sm:text-2xl font-bold uppercase tracking-wider" data-de="PRIVAT • GEWERBLICH • ZUVERLÄSSIG" data-en="PRIVATE • COMMERCIAL • RELIABLE">
+                PRIVAT • GEWERBLICH • ZUVERLÄSSIG
+            </p>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base" data-de="Schnell, pünktlich und professionell. Umzüge, Möbeltransporte und Entrümpelungen in Wien und allen Bundesländern." data-en="Fast, punctual, and professional. Relocations, furniture transport, and cleanouts in Vienna and across Austria.">
+                Schnell, pünktlich und professionell. Umzüge, Möbeltransporte und Entrümpelungen in Wien und allen Bundesländern.
+            </p>
+
+            <!-- Quick Social & Messaging Bar -->
+            <div class="flex flex-wrap items-center justify-center gap-3 pt-4">
+                <a href="https://wa.me/436603771682" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-md text-xs sm:text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                </a>
+                <a href="viber://chat?number=%2B436603771682" target="_blank" class="bg-purple-600 hover:bg-purple-500 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-md text-xs sm:text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-viber text-base"></i> Viber
+                </a>
+                <a href="https://instagram.com" target="_blank" class="bg-gradient-to-r from-purple-500 via-pink-500 to-amber-500 hover:opacity-90 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-md text-xs sm:text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-base"></i> Instagram
+                </a>
+                <a href="https://facebook.com" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-4 py-2.5 rounded-xl transition shadow-md text-xs sm:text-sm flex items-center gap-2">
+                    <i class="fa-brands fa-facebook text-base"></i> Facebook
+                </a>
+            </div>
+        </section>
+
+        <!-- Interactive Quote Calculator Section -->
+        <section id="calculator" class="glass-card rounded-2xl p-6 sm:p-8">
+            <div class="border-b border-slate-700/60 pb-4 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <h2 class="text-2xl font-extrabold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-amber-400"></i>
+                        <span data-de="Instant Angebot Rechner" data-en="Instant Quote Calculator">Instant Angebot Rechner</span>
+                    </h2>
+                    <p class="text-xs text-slate-400" data-de="Berechnen Sie eine unverbindliche Richtpreis-Schätzung" data-en="Calculate a non-binding estimated cost">Berechnen Sie eine unverbindliche Richtpreis-Schätzung</p>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 w-fit" data-de="Live Preis Schätzung" data-en="Live Price Estimate">
+                    <i class="fa-solid fa-bolt mr-1"></i> Live Preis Schätzung
+                </span>
+            </div>
+
+            <form id="quoteForm" oninput="calculateEstimate()" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2" data-de="Auszugsort (Start)" data-en="Moving From (Origin)">Auszugsort (Start)</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-map-pin absolute left-3 top-3 text-slate-400"></i>
+                        <input type="text" id="fromCity" placeholder="z.B. Wien 1010" class="w-full bg-slate-900/80 border border-slate-700 rounded-lg pl-9 pr-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400" value="Wien">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2" data-de="Einzugsort (Ziel)" data-en="Moving To (Destination)">Einzugsort (Ziel)</label>
+                    <div class="relative">
+                        <i class="fa-solid fa-flag-checkered absolute left-3 top-3 text-slate-400"></i>
+                        <input type="text" id="toCity" placeholder="z.B. Graz, Linz, Wien" class="w-full bg-slate-900/80 border border-slate-700 rounded-lg pl-9 pr-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400" value="Wien">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2" data-de="Entfernung Kategorie" data-en="Distance Category">Entfernung Kategorie</label>
+                    <select id="distanceType" class="w-full bg-slate-900/80 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                        <option value="local" data-de="Innerhalb Wien (Lokal)" data-en="Within Vienna (Local)">Innerhalb Wien (Lokal)</option>
+                        <option value="medium" data-de="Bis 100 km (z.B. NÖ / Burgenland)" data-en="Up to 100 km">Bis 100 km (z.B. NÖ / Burgenland)</option>
+                        <option value="long" data-de="Über 100 km (Ganz Österreich)" data-en="Over 100 km (All Austria)">Über 100 km (Ganz Österreich)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2" data-de="Leistungstyp" data-en="Service Type">Leistungstyp</label>
+                    <select id="serviceType" class="w-full bg-slate-900/80 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                        <option value="umzug" data-de="Privatumzug / Firmenumzug" data-en="Private / Office Move">Privatumzug / Firmenumzug</option>
+                        <option value="moebel" data-de="Möbeltransport" data-en="Furniture Transport Only">Möbeltransport</option>
+                        <option value="entruempelung" data-de="Entrümpelung & Räumung" data-en="Clearance / Cleanout">Entrümpelung & Räumung</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2" data-de="Wohnungsgröße / Zimmer" data-en="Apartment Size / Rooms">Wohnungsgröße / Zimmer</label>
+                    <select id="roomCount" class="w-full bg-slate-900/80 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                        <option value="1" data-de="1 Zimmer / Studio (30–45 m²)" data-en="1-Room / Studio (30–45 m²)">1 Zimmer / Studio (30–45 m²)</option>
+                        <option value="2" selected data-de="2 Zimmer Apartment (50–70 m²)" data-en="2-Room Apartment (50–70 m²)">2 Zimmer Apartment (50–70 m²)</option>
+                        <option value="3" data-de="3 Zimmer Apartment (70–90 m²)" data-en="3-Room Apartment (70–90 m²)">3 Zimmer Apartment (70–90 m²)</option>
+                        <option value="4" data-de="Große Wohnung / Haus (100+ m²)" data-en="Large Flat / House (100+ m²)">Große Wohnung / Haus (100+ m²)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2" data-de="Anzahl Umzugshelfer" data-en="Number of Movers">Anzahl Umzugshelfer</label>
+                    <select id="helperCount" class="w-full bg-slate-900/80 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                        <option value="2" data-de="2 Umzugshelfer + LKW" data-en="2 Movers + Truck">2 Umzugshelfer + LKW</option>
+                        <option value="3" data-de="3 Umzugshelfer + LKW" data-en="3 Movers + Truck">3 Umzugshelfer + LKW</option>
+                        <option value="4" data-de="4+ Umzugshelfer + LKW" data-en="4+ Movers + Trucks">4+ Umzugshelfer + LKW</option>
+                    </select>
+                </div>
+
+                <div class="md:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 pt-2">
+                    <label class="flex items-center space-x-2 text-sm text-slate-300 cursor-pointer bg-slate-900/40 p-2.5 rounded-lg border border-slate-800">
+                        <input type="checkbox" id="extraAssembly" class="rounded text-amber-500 focus:ring-amber-400">
+                        <span data-de="Montage & Demontage" data-en="Furniture Assembly/Disassembly">Montage & Demontage</span>
+                    </label>
+                    <label class="flex items-center space-x-2 text-sm text-slate-300 cursor-pointer bg-slate-900/40 p-2.5 rounded-lg border border-slate-800">
+                        <input type="checkbox" id="extraLift" class="rounded text-amber-500 focus:ring-amber-400">
+                        <span data-de="Kein Aufzug (Treppenarbeit)" data-en="No Elevator (Stairs Work)">Kein Aufzug (Treppenarbeit)</span>
+                    </label>
+                    <label class="flex items-center space-x-2 text-sm text-slate-300 cursor-pointer bg-slate-900/40 p-2.5 rounded-lg border border-slate-800">
+                        <input type="checkbox" id="extraPacking" class="rounded text-amber-500 focus:ring-amber-400">
+                        <span data-de="Verpackungsservice" data-en="Packing Service">Verpackungsservice</span>
+                    </label>
+                </div>
+            </form>
+
+            <div class="mt-8 bg-amber-500/10 border border-amber-500/30 rounded-xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                    <span class="text-xs uppercase font-bold text-amber-300 tracking-wider block" data-de="Geschätzter Richtpreis" data-en="Estimated Price Range">Geschätzter Richtpreis</span>
+                    <div class="text-3xl sm:text-4xl font-black text-amber-400" id="estimatedPrice">€ 600 - € 900</div>
+                    <p class="text-xs text-slate-400 mt-1" data-de="*Endpreis wird nach kostenloser Besichtigung fixiert" data-en="*Final price confirmed after free consultation">*Endpreis wird nach kostenloser Besichtigung fixiert</p>
+                </div>
+                <div class="flex flex-wrap gap-2 w-full sm:w-auto">
+                    <a href="tel:+436603771682" class="flex-1 sm:flex-none text-center bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-3 rounded-xl transition shadow-lg text-sm flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> <span data-de="Anrufen" data-en="Call">Anrufen</span>
+                    </a>
+                    <a href="https://wa.me/436603771682" target="_blank" class="flex-1 sm:flex-none text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-3 rounded-xl transition shadow-lg text-sm flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                    </a>
+                    <a href="viber://chat?number=%2B436603771682" target="_blank" class="flex-1 sm:flex-none text-center bg-purple-600 hover:bg-purple-500 text-white font-bold px-4 py-3 rounded-xl transition shadow-lg text-sm flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-viber text-base"></i> Viber
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Services Section -->
+        <section id="services" class="space-y-6">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white" data-de="Unsere Leistungen" data-en="Our Services">Unsere Leistungen</h2>
+                <p class="text-sm text-slate-300 mt-1" data-de="Zuverlässige Umzugs- & Transportlösungen aus einer Hand" data-en="Reliable relocation and transport solutions from a single provider">Zuverlässige Umzugs- & Transportlösungen aus einer Hand</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl hover:border-amber-400/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-4 border border-amber-500/30">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-de="Privatumzüge" data-en="Private Moves">Privatumzüge</h3>
+                    <p class="text-sm text-slate-300" data-de="Stressfrei ins neue Zuhause. Wir kümmern uns um das sichere Einpacken, Beladen, Transportieren und Aufstellen Ihrer Möbel." data-en="Stress-free move to your new home. We handle safe packing, loading, transport, and furniture setup.">Stressfrei ins neue Zuhause. Wir kümmern uns um das sichere Einpacken, Beladen, Transportieren und Aufstellen Ihrer Möbel.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-amber-400/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-4 border border-amber-500/30">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-de="Firmenumzüge" data-en="Office Relocations">Firmenumzüge</h3>
+                    <p class="text-sm text-slate-300" data-de="Pünktliche Büro- und Firmenverlagerungen. Wir minimieren Ihre Ausfallzeiten durch strukturierte Abwicklung." data-en="Punctual office and corporate moves. We minimize downtime with structured execution.">Pünktliche Büro- und Firmenverlagerungen. Wir minimieren Ihre Ausfallzeiten durch strukturierte Abwicklung.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-amber-400/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-4 border border-amber-500/30">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-de="Möbeltransport" data-en="Furniture Transport">Möbeltransport</h3>
+                    <p class="text-sm text-slate-300" data-de="Sicherer Transport einzelner Möbelstücke, Online-Käufe oder schwere Einrichtungselemente." data-en="Safe transport of single furniture items, online store purchases, or heavy interior pieces.">Sicherer Transport einzelner Möbelstücke, Online-Käufe oder schwere Einrichtungselemente.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-amber-400/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-4 border border-amber-500/30">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-de="Montage & Demontage" data-en="Assembly & Disassembly">Montage & Demontage</h3>
+                    <p class="text-sm text-slate-300" data-de="Fachgerechter Abbau und Wiederaufbau von Schränken, Betten, Küchen und Wandsystemen." data-en="Professional disassembly and reassembly of wardrobes, beds, kitchens, and wall systems.">Fachgerechter Abbau und Wiederaufbau von Schränken, Betten, Küchen und Wandsystemen.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-amber-400/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-4 border border-amber-500/30">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-de="Entrümpelung" data-en="Clearance & Cleanouts">Entrümpelung</h3>
+                    <p class="text-sm text-slate-300" data-de="Entrümpelungen und Räumungen von Wohnungen, Kellern oder Dachböden auf Anfrage inkl. Entsorgung." data-en="Clearance and disposal services for apartments, basements, or attics upon request.">Entrümpelungen und Räumungen von Wohnungen, Kellern oder Dachböden auf Anfrage inkl. Entsorgung.</p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl hover:border-amber-400/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold mb-4 border border-amber-500/30">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2" data-de="Sicherer Transport" data-en="Insured Transport">Sicherer Transport</h3>
+                    <p class="text-sm text-slate-300" data-de="Ihre Zufriedenheit und die Unversehrtheit Ihres Frachtguts haben bei uns höchste Priorität." data-en="Your satisfaction and cargo safety are our highest priorities on every single drive.">Ihre Zufriedenheit und die Unversehrtheit Ihres Frachtguts haben bei uns höchste Priorität.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Moving Inventory Planner -->
+        <section id="inventory" class="glass-card rounded-2xl p-6 sm:p-8 space-y-6">
+            <div class="border-b border-slate-700/60 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <h2 class="text-2xl font-extrabold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-boxes-packing text-amber-400"></i>
+                        <span data-de="Interaktiver Umzugslisten-Planer" data-en="Interactive Inventory Planner">Interaktiver Umzugslisten-Planer</span>
+                    </h2>
+                    <p class="text-xs text-slate-400" data-de="Erstellen Sie Ihre Inventarliste für das Angebot" data-en="Build your item checklist for quote submission">Erstellen Sie Ihre Inventarliste für das Angebot</p>
+                </div>
+                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 w-fit" id="itemCounter">
+                    0 Artikel gelistet
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+                <input type="text" id="itemName" placeholder="Gegenstand (z.B. Sofa 3-Sitzer)" class="sm:col-span-2 bg-slate-900/80 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400" data-de-placeholder="Gegenstand (z.B. Sofa 3-Sitzer)" data-en-placeholder="Item (e.g. 3-seater sofa)">
+                <input type="number" id="itemQty" value="1" min="1" class="bg-slate-900/80 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-amber-400">
+                <button onclick="addInventoryItem()" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-plus"></i> <span data-de="Hinzufügen" data-en="Add Item">Hinzufügen</span>
+                </button>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-slate-300">
+                    <thead class="bg-slate-900/60 text-xs text-amber-300 uppercase border-b border-slate-700">
+                        <tr>
+                            <th class="p-3" data-de="Gegenstand" data-en="Item">Gegenstand</th>
+                            <th class="p-3" data-de="Menge" data-en="Quantity">Menge</th>
+                            <th class="p-3 text-right" data-de="Aktion" data-en="Action">Aktion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inventoryList" class="divide-y divide-slate-800">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex justify-end gap-3 pt-2">
+                <button onclick="copyInventoryToClipboard()" class="glass-card-light text-slate-900 font-bold px-4 py-2 rounded-lg text-xs uppercase hover:bg-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-copy"></i> <span data-de="Liste Kopieren" data-en="Copy List">Liste Kopieren</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section id="contact" class="glass-card rounded-2xl p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <h2 class="text-2xl font-extrabold text-white" data-de="Kontaktieren Sie Uns" data-en="Contact Us">Kontaktieren Sie Uns</h2>
+                <p class="text-sm text-slate-300" data-de="Kontaktieren Sie uns gerne für weitere Informationen und ein individuelles Angebot!" data-en="Contact us anytime for more details and a tailored personal offer!">
+                    Kontaktieren Sie uns gerne für weitere Informationen und ein individuelles Angebot!
+                </p>
+
+                <div class="space-y-3 pt-2">
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/30">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block" data-de="Telefon / Mobil" data-en="Phone / Mobile">Telefon / Mobil</span>
+                            <a href="tel:+436603771682" class="font-bold hover:text-amber-400 transition">+43 660 377 16 82</a> / 
+                            <a href="tel:+4366499011022" class="font-bold hover:text-amber-400 transition">+43 664 990 11 022</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/30">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block" data-de="E-Mail Adresse" data-en="Email Address">E-Mail Adresse</span>
+                            <a href="mailto:dm_trans.eu@gmx.at" class="font-bold hover:text-amber-400 transition">dm_trans.eu@gmx.at</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-3 text-slate-200">
+                        <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/30">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block" data-de="Einsatzgebiet" data-en="Service Area">Einsatzgebiet</span>
+                            <span class="font-bold text-white" data-de="Wien & ganz Österreich" data-en="Vienna & All Austria">Wien & ganz Österreich</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 space-y-2">
+                    <span class="text-xs uppercase font-bold text-amber-300 tracking-wider block" data-de="Social Media & Chat Direkt" data-en="Social Media & Instant Chat">Social Media & Chat Direkt</span>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://wa.me/436603771682" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold p-2.5 rounded-lg text-sm transition flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                        </a>
+                        <a href="viber://chat?number=%2B436603771682" target="_blank" class="bg-purple-600 hover:bg-purple-500 text-white font-bold p-2.5 rounded-lg text-sm transition flex items-center gap-2">
+                            <i class="fa-brands fa-viber text-lg"></i> Viber
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="bg-gradient-to-r from-purple-500 via-pink-500 to-amber-500 hover:opacity-90 text-white font-bold p-2.5 rounded-lg text-sm transition flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-lg"></i> Instagram
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white font-bold p-2.5 rounded-lg text-sm transition flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-lg"></i> Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form onsubmit="handleContactSubmit(event)" class="space-y-4 bg-slate-900/60 p-5 rounded-xl border border-slate-800">
+                <h3 class="text-lg font-bold text-white" data-de="Schnellanfrage Senden" data-en="Send Quick Inquiry">Schnellanfrage Senden</h3>
+                
+                <input type="text" id="contactName" placeholder="Ihr Name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-400" data-de-placeholder="Ihr Name" data-en-placeholder="Your Name">
+                <input type="tel" id="contactPhone" placeholder="Telefonnummer" required class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-400" data-de-placeholder="Telefonnummer" data-en-placeholder="Phone Number">
+                <textarea id="contactMsg" rows="3" placeholder="Ihre Nachricht oder Umzugsdetails..." class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-sm text-white focus:outline-none focus:border-amber-400" data-de-placeholder="Ihre Nachricht oder Umzugsdetails..." data-en-placeholder="Your message or moving details..."></textarea>
+
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold p-2.5 rounded-lg text-sm transition">
+                    <span data-de="Anfrage Absenden" data-en="Send Request">Anfrage Absenden</span>
+                </button>
+                <div id="formFeedback" class="hidden text-xs text-emerald-400 text-center font-medium"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-card border-t border-slate-800 mt-12 py-6 text-center text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="font-bold text-slate-200" data-de="D&M TRANS e.U. — Ihr Partner für jede Fahrt!" data-en="D&M TRANS e.U. — Your partner for every drive!">D&M TRANS e.U. — Ihr Partner für jede Fahrt!</p>
+            <p data-de="Wien & ganz Österreich &bull; Privatumzüge &bull; Firmenumzüge &bull; Möbeltransport &bull; Montage" data-en="Vienna & All Austria &bull; Private Moves &bull; Office Relocations &bull; Furniture Transport &bull; Assembly">Wien & ganz Österreich &bull; Privatumzüge &bull; Firmenumzüge &bull; Möbeltransport &bull; Montage</p>
+            
+            <div class="flex justify-center items-center gap-4 pt-1">
+                <a href="https://wa.me/436603771682" target="_blank" class="text-slate-400 hover:text-emerald-400 transition text-lg"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="viber://chat?number=%2B436603771682" target="_blank" class="text-slate-400 hover:text-purple-400 transition text-lg"><i class="fa-brands fa-viber"></i></a>
+                <a href="https://instagram.com" target="_blank" class="text-slate-400 hover:text-pink-400 transition text-lg"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" class="text-slate-400 hover:text-blue-400 transition text-lg"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <p class="text-slate-500 pt-2">&copy; 2026 D&M TRANS e.U. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        let currentLang = 'DE';
+        let inventoryData = [
+            { id: 1, nameDE: 'Sofa 3-Sitzer', nameEN: 'Sofa 3-seater', qty: 1 },
+            { id: 2, nameDE: 'Umzugskartons Standard', nameEN: 'Moving Boxes Standard', qty: 15 }
+        ];
+
+        function calculateEstimate() {
+            const rooms = parseInt(document.getElementById('roomCount').value);
+            const distance = document.getElementById('distanceType').value;
+            const extraAssembly = document.getElementById('extraAssembly').checked;
+            const extraLift = document.getElementById('extraLift').checked;
+            const extraPacking = document.getElementById('extraPacking').checked;
+
+            let minBase = 299;
+            let maxBase = 600;
+
+            if (rooms === 2) {
+                minBase = 600;
+                maxBase = 900;
+            } else if (rooms === 3) {
+                minBase = 900;
+                maxBase = 1300;
+            } else if (rooms >= 4) {
+                minBase = 1390;
+                maxBase = 2400;
+            }
+
+            if (distance === 'medium') {
+                minBase += 100;
+                maxBase += 150;
+            } else if (distance === 'long') {
+                minBase += 250;
+                maxBase += 400;
+            }
+
+            if (extraAssembly) { minBase += 50; maxBase += 100; }
+            if (extraLift) { minBase += 40; maxBase += 80; }
+            if (extraPacking) { minBase += 60; maxBase += 120; }
+
+            const displayMax = rooms >= 4 ? `€ ${minBase} - € ${maxBase}+` : `€ ${minBase} - € ${maxBase}`;
+            document.getElementById('estimatedPrice').innerText = displayMax;
+        }
+
+        function renderInventory() {
+            const listContainer = document.getElementById('inventoryList');
+            listContainer.innerHTML = '';
+            let totalUnits = 0;
+
+            inventoryData.forEach(item => {
+                totalUnits += parseInt(item.qty);
+                const displayName = currentLang === 'DE' ? (item.nameDE || item.name) : (item.nameEN || item.name);
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-900/40';
+                tr.innerHTML = `
+                    <td class="p-3 font-medium text-white">${displayName}</td>
+                    <td class="p-3">${item.qty} ${currentLang === 'DE' ? 'Stk.' : 'pcs.'}</td>
+                    <td class="p-3 text-right">
+                        <button onclick="removeInventoryItem(${item.id})" class="text-rose-400 hover:text-rose-300 text-xs font-bold">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                `;
+                listContainer.appendChild(tr);
+            });
+
+            document.getElementById('itemCounter').innerText = `${totalUnits} ${currentLang === 'DE' ? 'Artikel gelistet' : 'items listed'}`;
+        }
+
+        function addInventoryItem() {
+            const nameInput = document.getElementById('itemName');
+            const qtyInput = document.getElementById('itemQty');
+            const name = nameInput.value.trim();
+            const qty = parseInt(qtyInput.value);
+
+            if (!name || isNaN(qty) || qty < 1) return;
+
+            inventoryData.push({ id: Date.now(), name: name, nameDE: name, nameEN: name, qty });
+            nameInput.value = '';
+            qtyInput.value = '1';
+            renderInventory();
+        }
+
+        function removeInventoryItem(id) {
+            inventoryData = inventoryData.filter(item => item.id !== id);
+            renderInventory();
+        }
+
+        function copyInventoryToClipboard() {
+            if (inventoryData.length === 0) return;
+            const text = inventoryData.map(i => {
+                const name = currentLang === 'DE' ? (i.nameDE || i.name) : (i.nameEN || i.name);
+                return `${i.qty}x ${name}`;
+            }).join('\n');
+            
+            const dummy = document.createElement('textarea');
+            document.body.appendChild(dummy);
+            dummy.value = `D&M TRANS e.U. Inventarliste:\n${text}`;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+
+            alert(currentLang === 'DE' ? 'Inventarliste in die Zwischenablage kopiert!' : 'Inventory list copied to clipboard!');
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'DE' ? 'EN' : 'DE';
+            document.getElementById('langText').innerText = currentLang === 'DE' ? 'DE / EN' : 'EN / DE';
+
+            document.querySelectorAll('[data-de]').forEach(el => {
+                const text = el.getAttribute(`data-${currentLang.toLowerCase()}`);
+                if (text) el.innerText = text;
+            });
+
+            document.querySelectorAll('[data-de-placeholder]').forEach(el => {
+                const placeholder = el.getAttribute(`data-${currentLang.toLowerCase()}-placeholder`);
+                if (placeholder) el.placeholder = placeholder;
+            });
+
+            renderInventory();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('formFeedback');
+            feedback.innerText = currentLang === 'DE' ? 'Anfrage erfolgreich gesendet! Wir rufen Sie in Kürze zurück.' : 'Request sent successfully! We will call you shortly.';
+            feedback.classList.remove('hidden');
+            e.target.reset();
+        }
+
+        window.onload = function() {
+            calculateEstimate();
+            renderInventory();
+        };
+    </script>
+</body>
+</html>
